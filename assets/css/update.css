@@ -1,0 +1,15 @@
+#exTab1{
+    float: left;
+    width: 50%;
+}
+.owner-div {
+    float: right;
+    width: 50%;
+}
+.owner-div .ownerbox{
+    border: 1px solid black;
+}
+.box{
+    text-align: center;
+}
+

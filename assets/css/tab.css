@@ -5,6 +5,7 @@ body {
 #exTab1 {
     width: 100%;
 }
+
 #exTab1 .tab-content {
     color: black;
     padding: 5px 15px;
@@ -18,6 +19,7 @@ body {
     text-align: center;
     padding: 5px 0 10px 0;
 }
+
 #exTab1 .nav-tabs>li>a {
     border-radius: 0;
     color: black;
@@ -29,17 +31,6 @@ body {
     color : black;
     background-color: white;
     padding : 5px 15px;
-}
-#exTab1 >.tab-content>.tab-pane{
-    text-align: center;
-}
-#exTab1 >.tab-content>.tab-pane>#notepad{
-    display: inline-block;
-    resize: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-    
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: purple;

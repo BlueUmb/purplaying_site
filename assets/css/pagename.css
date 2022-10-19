@@ -1,16 +1,10 @@
-#pagenamediv >.pagenameul {
+.pagenameul {
     list-style: none;
-    text-align: end;
 }
-#pagenamediv >.pagenameul > li {
-    display: inline-block; 
-}
-#pagenamediv >.pagenameul > li > h3 {
-    text-align: start;
-    padding: 0 400px;
-}
-#pagenamediv >.pagenameul > li > a{
+.pagenameul > li > a{
     font-size: 10px;
     color: gray;
-    text-align: end;
+}
+.pagenameul > li {
+    display: inline;
 }

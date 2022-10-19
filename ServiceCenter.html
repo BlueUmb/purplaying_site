@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="assets/css/main.css"> <!-- main style-->
   <link rel="stylesheet" href="assets/css/headers.css"> <!-- header-->
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/"> <!-- header-->
-  <link rel="stylesheet" href="assets/css/servicecenter.css"> <!-- servicecenter-->
   <title>Purplaying</title>
 
 </head>
@@ -99,22 +98,37 @@
     <section>
       <!-- 프로젝트 작성 페이지 탭 -->
       
-      <div id="inquiry" class="container">
+
+      
+      <div class="container col-8">
         <h3>1 : 1 문의 등록</h3>
-        <div class="title-div">
-          <textarea class="inquiry-title" placeholder="제목을 입력하세요​" rows="1px" cols="150"></textarea>
-        </div>
-        <div class="content-div">
-          <textarea class="inquiry-content" placeholder="내용을 입력하세요​" rows="20" cols="150"></textarea>
-        </div>
-        <div class="radio-btn">
-          <p class="radio-text">공개 여부</p>
-            <input type="radio" class="okradio-btn">공개</button>
-            <input type="radio" class="noradio-btn">비공개</button>
-        </div>
-        <div class="complete-btn">
-          <button class="cancel-btn">취 소</button>
-          <button class="upload-btn">게 시</button>
+        <div class="form-control mb-3 px-4">
+          <div class="row py-3">
+            <textarea class="form-control" placeholder="제목을 입력하세요​" style="resize: none;"></textarea>
+          </div>
+          <div class="row" style="height: 500px;">
+              <textarea class="form-control" placeholder="내용을 입력하세요​" style="resize: none;"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-10 text-end">
+              <p>공개 여부</p>
+            </div>
+            <div class="col-2 text-end">
+          
+              <div class="form-check">
+                <input class="form-check-input" name="flexRadioDefault" type="radio">
+                <label>공개</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" name="flexRadioDefault" type="radio" >
+                <label>비공개</label>
+              </div>
+            </div>
+          </div>
+          <div class="text-end">
+            <button class="btn btn-primary px-4">취 소</button>
+            <button class="btn btn-primary px-4">게 시</button>
+          </div>
         </div>
       </div>
       

@@ -16,6 +16,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/"> <!-- header-->
   <link rel="stylesheet" href="assets/css/tab.css"> <!-- tab -->
   <link rel="stylesheet" href="assets/css/pagename.css"> <!-- pagename,~ing -->
+  <link rel="stylesheet" href="assets/css/policyexplain.css"> <!-- pagename,~ing -->
   <title>Purplaying</title>
 
 </head>
@@ -100,93 +101,174 @@
     <section>
       <!-- 프로젝트 작성 페이지 탭 -->
       
-      <div class="row py-2 pb-4">
-        <div class="col-4"></div>
-        <div class="col-4">
-          <h3 class="text-center">프로젝트 기획</h3>
-        </div>
-        <div class="col-4">
-          <ul class="pagenameul">
-            <li class="text-center px-1">
-              <span>|</span>
-              <a href="" data-toggle="tab">미리보기</a> 
+      <h1 class="visually-hidden">홈</h1>
+      <!--컨텐츠 영역-->
+      <div class="container">
+        <h1 class="text-start">고객센터</h1>
+        <div id="exTab1">
+          <ul class="nav-tabs">
+            <li class="active">
+              <a href="#1a" data-toggle="tab" >공지 사항</a>
             </li>
-            <li class="text-center px-1">
-              <span>|</span>
-              <a href="" data-toggle="tab">작성중</a>   
+            <li>
+              <a href="#2a" data-toggle="tab">자주 묻는 질문</a>
             </li>
-            <li class="text-center px-1">
-              <span>|</span>
-              <a href="" data-toggle="tab">저장하기</a> 
+            <li>
+              <a href="#3a" data-toggle="tab">1:1 문의</a>
             </li>
           </ul>
-        </div>
-      </div>
-     
-      <div id="exTab1" class="container">
-        <ul class="nav-tabs">
-          <li>
-            <a href="#1a" data-toggle="tab">기본정보</a>
-          </li>
-          <li>
-            <a href="#2a" data-toggle="tab">펀딩계획</a>
-          </li>
-          <li>
-            <a href="#3a" data-toggle="tab">리워드 구성</a>
-          </li>
-          <li>
-            <a href="#4a" data-toggle="tab">프로젝트 계획</a>
-          </li>
-          <li>
-            <a href="#5a" data-toggle="tab">창작자 정보</a>
-          </li>
-          <li>
-            <a href="#6a" data-toggle="tab">신뢰와 안전</a>
-          </li>
-        </ul>
-        <div class="tab-content clearfix">
-          <div class="tab-pane active" id="1a">
-            <h3>기본정보</h3>
-          </div>
-          <div class="tab-pane" id="2a">
-            <h3>펀딩 계획</h3>
-          </div>
-          <div class="tab-pane" id="3a">
-            <h3>리워드 구성</h3>
-          </div>
-          <div class="tab-pane" id="4a">
-            <div class="row">
-              <h3 class="text-start">프로젝트 소개​</h3>
-              <p class="text-start">무엇을 만들기 위한 프로젝트인지 분명히 알려주세요.</p>
+          <div class="tab-content clearfix">
+            <div class="tab-pane active" id="1a">
+              <h3>공지 사항</h3>
             </div>
-            <div>
-              <textarea class="form-control" placeholder="예시&#13;&#10;​Q. 무엇을 만들기 위한 프로젝트인가요?&#13;&#10;​Q. 프로젝트를 간단히 소개한다면?&#13;&#10;​Q. 이 프로젝트가 왜 의미있나요?&#13;&#10;​Q. 이 프로젝트를 시작하게 된 배경이 무엇인가요?​"
-                rows="30" style="resize: none;"></textarea>
-            </div>
-          </div>
-          <div class="tab-pane" id="5a">
-            <h3>창작자 정보</h3>
-          </div>
-          <div class="tab-pane" id="6a">
-            <div class="row text-start pb-3">
-              <div class="col-4">
-                <h5>프로젝트 정책</h5>
-                <p>(예시) 아래와 같은 사항을 고려해서 작성해주세요. 진행하는 프로젝트에 해당되지 않는 항목은 삭제해주세요.</p>
-                <br>
-      
-                <ul >
-                  <li>
-                    <p>펀딩 마감 이후에는 후원금액이 창작자에게 전달되기에 텀블벅을 통해 환불이 불가합니다. 환불은 창작자가 환불계좌를 받아 반환하는 방식으로만 가능하며, 어떤 경우에 환불이 가능한지를 기재해주세요.</p>
-                  <li >
-                    <p>펀딩 성사 후 지연 또는 선물 전달에 문제가 발생했을 때에 어떤 식으로 대응하시겠어요? 이 프로젝트 특성상 발생할 수 있는 문제에 대한 추가적인 정책이나 약속이 있다면 기재해주세요. (후원금 환불, 대체 보상 등)</p>
-                  </li>
-                  <li>
-                    <p>배송이 필요한 선물에 문제가 발생한 경우 교환, A/S는 어떻게 진행되나요?</p>
-                  </li>
-                </ul>
+          <div class="tab-pane mb-4" id="2a">
+            </i>자주 묻는 질문 </b></h5>
+            <div id="best" class="mt-2">
+              <div class="card">
+                <div class="card-body" id="q1">
+                  <a data-toggle="collapse" href="#a1" class="card-link">
+                    <b>Q.</b>
+                    <b>배송일자는 어떻게 되나요?</b>
+                  </a>
+                </div>
+                <div id="a1" class="collapse">
+                  <div class="card-body" style="background:#ececf0;">
+                    <p class="p-3">
+                      배송일자는 펀딩에 따라 상이합니다. 판매자에게 문의해주세요
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-8">
-                <textarea class="form-control" placeholder="내용을 입력하세요." rows="30" style="resize: none;"></textarea>
+              <div class="card">
+                <div class="card-body" id="q2">
+                  <a href="#a2" class="card-link">
+                    <b>Q.</b>
+                    <b>배송 업체를 변경 할 수 있나요?</b>
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" id="q3">
+                  <a href="#a3" class="card-link">
+                    <b>Q.</b>
+                    <b>펀딩을 했는데 결제가 되지 않았습니다?</b>
+                  </a>
+                </div>
+                <div id="a3" class="collapse">
+                  <div class="card-body" style="background:#ececf0;">
+                    <p class="p-3">
+                      펀딩 결제는 펀딩이 끝난 후 익일에 결제됩니다
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" id="q4">
+                  <a href="#a4" class="card-link">
+                    <b>Q.</b>
+                    <b>교환은 어떻게 되나요?</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="tab-pane" id="3a">
+              <div class="mt-5">
+                <div class="row py-3">
+                  <div>
+                    <div id="submain">
+                      <h3 id = "notice"><i class="fas fa-bullhorn" id="a3"></i><b>1:1 문의</b></h3>
+                      <hr/>
+                      <!--문의 테이블 -->
+                      <table class = "table table-hover" style="border-top:2px solid black;border-bottom:2px solid black;">
+                        <thead id = "noticehead">
+                          <tr>
+                            <th>No.</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>공개여부</th>
+                            <th>등록일</th>
+                          </tr>
+                        </thead>
+                        <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                          <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                        </tbody>
+                          <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                        <!--각 페이지별 번호 부분 (맨 아래)-->
+                      <div class='page text-center' id="pagination modal">
+                        <a href="#" class="first">처음 페이지</a>
+                        <a href='javascript:' class='arrow left'><span>←</span></a>
+                        <span class='invisible' id="active num">현재</span><strong> 1</strong><span class='invisible'>페이지</span>
+                        <a href="#" class="num">2</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">3</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">4</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">5</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">6</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">7</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">8</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">9</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">10</a><span class='invisible'>페이지</span>
+                        <a href="#" class='arrow right'><span>→</span></a>
+                        <a href="#" class="last">끝 페이지</a>
+                        <button class="btn btn-primary text-end" onclick="location.href='ServiceCenter.html'">등 록</button>
+                      </div>
+                      
+                    </div>
+                    
+                    <br/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

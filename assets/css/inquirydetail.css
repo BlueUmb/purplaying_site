@@ -1,35 +1,24 @@
-#inquiry-detail .inquiry-title{
+.inquiry-title{
     border: 1px solid black;
-    height: 25px;
+    height: max-content;
 }
-#inquiry-detail .inquiry-title-detail{
-    display: inline-block; 
-    padding-left: 10px;
-}
-#inquiry-detail .inquiry-title-person{
-    float: right;
-    padding-right: 10px;
-}
-#inquiry-detail .inquiry-content-detail{
+.inquiry-content-detail{
     margin-top: 40px;
     border: 1px solid black;
     height: 250px;
     text-align: center;
 }
-#inquiry-detail .inquiry-notepad{
+  .inquiry-notepad{
     resize: none;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-#inquiry-detail .complete-btn{
-    padding-bottom: 40px;
-    text-align: right;
-}
-#inquiry-detail .cancel-btn{
+
+.cancel-btn{
     width: 100px;
     height: 40px;
 } 
-#inquiry-detail .upload-btn{
+.upload-btn{
     width: 100px;
     height: 40px;
 } 

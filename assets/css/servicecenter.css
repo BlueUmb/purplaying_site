@@ -1,43 +1,11 @@
-#inquiry{
-    text-align: center;
-}
-#inquiry h3{
+h3{
     text-align: left;
 }
-#inquiry .title-div{
-    padding-top: 20px;
-}
-#inquiry .content-div{
-    padding-top: 30px;
-}
-#inquiry .inquiry-title{
-    resize: none;
-}
-#inquiry .radio-btn{
-    padding-bottom: 40px;
-    text-align: right;
-    padding-right: 80px;
-} 
-#inquiry .radio-text{
-    margin-right: 40px;
-    display: inline-block;
-}
-#inquiry .complete-btn{
-    padding-bottom: 40px;
-    text-align: right;
-    padding-right: 80px;
-} 
-#inquiry .cancel-btn{
-    width: 100px;
-    height: 40px;
-} 
-#inquiry .upload-btn{
-    width: 100px;
-    height: 40px;
-} 
 
-#inquiry .inquiry-content{
+.inquiry-title{
     resize: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-} 
+}
+
+.radio-btn p{
+    display: inline;
+}

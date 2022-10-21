@@ -14,10 +14,8 @@
   <link rel="stylesheet" href="assets/css/main.css"> <!-- main style-->
   <link rel="stylesheet" href="assets/css/headers.css"> <!-- header-->
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/"> <!-- header-->
-  <link rel="stylesheet" href="assets/css/projectdetail.css"> <!-- tab -->
-  <link rel="stylesheet" href="assets/css/update.css"> 
-
-
+  <link rel="stylesheet" href="assets/css/tab.css"> <!-- tab -->
+  <link rel="stylesheet" href="assets/css/pagename.css"> <!-- pagename,~ing -->
   <title>Purplaying</title>
 
 </head>
@@ -102,35 +100,112 @@
     <section>
       <!-- 프로젝트 작성 페이지 탭 -->
       
+      <div class="row py-2 pb-4">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h3 class="text-center">프로젝트 기획</h3>
+        </div>
+        <div class="col-4">
+          <ul class="pagenameul">
+            <li class="text-center px-1">
+              <span>|</span>
+              <a href="" data-toggle="tab">미리보기</a> 
+            </li>
+            <li class="text-center px-1">
+              <span>|</span>
+              <a href="" data-toggle="tab">작성중</a>   
+            </li>
+            <li class="text-center px-1">
+              <span>|</span>
+              <a href="" data-toggle="tab">저장하기</a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+     
       <div id="exTab1" class="container">
         <ul class="nav-tabs">
           <li>
-            <a href="#1a" data-toggle="tab">프로젝트</a>
+            <a href="#1a" data-toggle="tab">기본정보</a>
           </li>
           <li>
-            <a href="#2a" data-toggle="tab">업데이트</a>
+            <a href="#2a" data-toggle="tab">펀딩계획</a>
           </li>
           <li>
-            <a href="#3a" data-toggle="tab">커뮤니티</a>
+            <a href="#3a" data-toggle="tab">리워드 구성</a>
+          </li>
+          <li>
+            <a href="#4a" data-toggle="tab">프로젝트 계획</a>
+          </li>
+          <li>
+            <a href="#5a" data-toggle="tab">창작자 정보</a>
+          </li>
+          <li>
+            <a href="#6a" data-toggle="tab">신뢰와 안전</a>
           </li>
         </ul>
         <div class="tab-content clearfix">
           <div class="tab-pane active" id="1a">
-            <h3>프로젝트</h3>
+            <h3>기본정보</h3>
           </div>
           <div class="tab-pane" id="2a">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" id="ownerimg">
-            <hr>  
+            <h3>펀딩 계획</h3>
           </div>
           <div class="tab-pane" id="3a">
-            <h3>커뮤니티</h3>
+            <h3>리워드 구성</h3>
+          </div>
+          <div class="tab-pane" id="4a">
+            <div class="row">
+              <h3 class="text-start">프로젝트 소개​</h3>
+              <p class="text-start">무엇을 만들기 위한 프로젝트인지 분명히 알려주세요.</p>
+            </div>
+            <div>
+              <textarea class="form-control" placeholder="예시&#13;&#10;​Q. 무엇을 만들기 위한 프로젝트인가요?&#13;&#10;​Q. 프로젝트를 간단히 소개한다면?&#13;&#10;​Q. 이 프로젝트가 왜 의미있나요?&#13;&#10;​Q. 이 프로젝트를 시작하게 된 배경이 무엇인가요?​"
+                rows="30" style="resize: none;"></textarea>
+            </div>
+          </div>
+          <div class="tab-pane" id="5a">
+            <div class="row text-start pb-3">
+              <div class="col-4">
+                <h5>본인 인증</h5>
+                <p>창작자 본인 이메일로 인증해주세요</p>
+                <br>
+                <h5>입금 계좌</h5>
+                <p>후원금을 전달받을 계좌를 등록해주세요.</p>
+              </div>
+              <div class="col-8">
+                <div class="form-control">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="6a">
+            <div class="row text-start pb-3">
+              <div class="col-4">
+                <h5>프로젝트 정책</h5>
+                <p>(예시) 아래와 같은 사항을 고려해서 작성해주세요. 진행하는 프로젝트에 해당되지 않는 항목은 삭제해주세요.</p>
+                <br>
+                <ul >
+                  <li>
+                    <p>펀딩 마감 이후에는 후원금액이 창작자에게 전달되기에 텀블벅을 통해 환불이 불가합니다. 환불은 창작자가 환불계좌를 받아 반환하는 방식으로만 가능하며, 어떤 경우에 환불이 가능한지를 기재해주세요.</p>
+                  <li >
+                    <p>펀딩 성사 후 지연 또는 선물 전달에 문제가 발생했을 때에 어떤 식으로 대응하시겠어요? 이 프로젝트 특성상 발생할 수 있는 문제에 대한 추가적인 정책이나 약속이 있다면 기재해주세요. (후원금 환불, 대체 보상 등)</p>
+                  </li>
+                  <li>
+                    <p>배송이 필요한 선물에 문제가 발생한 경우 교환, A/S는 어떻게 진행되나요?</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-8">
+                <textarea class="form-control" placeholder="내용을 입력하세요." rows="30" style="resize: none;"></textarea>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="owner-div" id="2a">
-        <p class="ownerbox">제작자 소개</p>
-      </div>
-    
+
+      
       <!-- Bootstrap core JavaScript
     ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
@@ -140,8 +215,7 @@
       <!----------------------------------------------------------------------------------------------->
 
     </section>
-    <div class="box">
-    </div>
+
 
     <!--푸터 -->
     <footer>
@@ -150,7 +224,7 @@
       </div>
     </footer>
 
-    </main>
+  </main>
 
   </section>
   <script src="assets/js/bootstrap.bundle.min.js"></script>

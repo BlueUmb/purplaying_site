@@ -14,11 +14,9 @@
   <link rel="stylesheet" href="assets/css/main.css"> <!-- main style-->
   <link rel="stylesheet" href="assets/css/headers.css"> <!-- header-->
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/"> <!-- header-->
-  <link rel="stylesheet" href="assets/css/tab.css"> <!-- tab -->
-  <link rel="stylesheet" href="assets/css/pagename.css"> <!-- pagename,~ing -->
-  <link rel="stylesheet" href="assets/css/policyexplain.css"> <!-- pagename,~ing -->
+  <link rel="stylesheet" href="assets/css/projectdetail.css">
   <title>Purplaying</title>
-
+ 
 </head>
 
 <body>
@@ -119,7 +117,100 @@
           </ul>
           <div class="tab-content clearfix">
             <div class="tab-pane active" id="1a">
-              <h3>공지 사항</h3>
+              <div class="mt-5">
+                <div class="row py-3">
+                  <div>
+                    <div id="submain">
+                      <h3 id = "notice"><i class="fas fa-bullhorn" id="a3"></i><b>공지사항</b></h3>
+                      <hr/>
+                      <!--문의 테이블 -->
+                      <table class = "table table-hover" style="border-top:2px solid black;border-bottom:2px solid black;">
+                        <thead id = "noticehead">
+                          <tr>
+                            <th>No.</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>공개여부</th>
+                            <th>등록일</th>
+                          </tr>
+                        </thead>
+                        <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                        <tbody id = "ntbody">
+                          <tr>
+                            <td>00</td>
+                            <td>[답변전]문의 사항 있어요</td>
+                            <td>김**</td>
+                            <td>비공개</td>
+                            <td>2022.09.30</td>
+                          </tr>
+                        </tbody>
+                          <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                        </tbody>
+                          <tbody id = "ntbody">
+                            <tr>
+                              <td>00</td>
+                              <td>[답변전]문의 사항 있어요</td>
+                              <td>김**</td>
+                              <td>비공개</td>
+                              <td>2022.09.30</td>
+                            </tr>
+                          </tbody>
+                      </table>
+                        <!--각 페이지별 번호 부분 (맨 아래)-->
+                      <div class='page text-center' id="pagination modal">
+                        <a href="#" class="first">처음 페이지</a>
+                        <a href='javascript:' class='arrow left'><span>←</span></a>
+                        <span class='invisible' id="active num">현재</span><strong> 1</strong><span class='invisible'>페이지</span>
+                        <a href="#" class="num">2</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">3</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">4</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">5</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">6</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">7</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">8</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">9</a><span class='invisible'>페이지</span>
+                        <a href="#" class="num">10</a><span class='invisible'>페이지</span>
+                        <a href="#" class='arrow right'><span>→</span></a>
+                        <a href="#" class="last">끝 페이지</a>
+                      </div>
+                    </div>
+                    <br/>
+                  </div>
+                </div>
+              </div>
             </div>
           <div class="tab-pane mb-4" id="2a">
             </i>자주 묻는 질문 </b></h5>
@@ -263,9 +354,7 @@
                         <a href="#" class="last">끝 페이지</a>
                         <button class="btn btn-primary text-end" onclick="location.href='ServiceCenter.html'">등 록</button>
                       </div>
-                      
                     </div>
-                    
                     <br/>
                   </div>
                 </div>

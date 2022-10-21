@@ -29,12 +29,6 @@ body {
     background-color: white;
     padding : 5px 15px;
 }
-#exTab1 >.tab-content>.tab-pane{
-    text-align: center;
-}
-#exTab1 >.tab-content>.tab-pane>#notepad{
-    display: inline-block;
-}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: purple;
     cursor: default;
